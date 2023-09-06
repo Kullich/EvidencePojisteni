@@ -31,10 +31,10 @@
         </div>
       </nav>
 
-      <div class="wrapper">
-        <h4 class="table-header">Pojištěnci</h4>
-        <div class="row justify-content-center">
-          <table class="table-bordered table col-lg-10 col-sm-8 ">
+      <div class="container my-5">
+        <h4 class="my-5">Pojištěnci</h4>
+        <div class="row justify-content-center ml-2">
+          <table class="table-bordered table table-responsive-lg">
             <thead>
               <tr>
                 <th scope="col">Jméno a Příjmení</th>
@@ -49,37 +49,39 @@
       </div>
 
 
-      <div class="container mt-5">
-        <h4>Nový Pojištěnec</h4>
-        <div>
-          <img src="images/avatar.jpg" alt="avatar">
-      <form id="pojistenci">
-        <div class="form-row justify-content-center">
-          <div class="form-group col-md-4">
-            <label for="inputJmeno">Jméno</label>
-            <input type="text" class="form-control" id="inputJmeno" placeholder="Jméno">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputPrijmeni">Přijmení</label>
-            <input type="text" class="form-control" id="inputPrijmeni" placeholder="Přijmení">
-          </div>
+      <div class="container my-5">
+        <div class="my-5">
+          <h4>Nový Pojištěnec</h4>
         </div>
-        <div class="form-row justify-content-center">
-          <div class="form-group col-md-4">
-            <label for="inputVek">Věk</label>
-            <input type="number" class="form-control" id="inputVek" placeholder="Věk">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputTelefon">Telefon</label>
-            <input type="text" class="form-control" id="inputTelefon" placeholder=" ">
-          </div>
-        </div> 
-        <div class="col-md-12 text-center">
-          <button type="submit" class="btn btn-primary formButton">Uložit</button>
+        <div class="row col-lg-10 justify-content-between">
+            <img class="avatar-preview img-thumbnail my-4" src="images/avatar.jpg" alt="avatar">
+          <form class="col-8" id="pojistenci">
+            <div class="form-row justify-content-center">
+              <div class="form-group col-sm-6">
+                <label for="inputJmeno">Jméno</label>
+                <input type="text" class="form-control" id="inputJmeno" placeholder="Jméno">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="inputPrijmeni">Přijmení</label>
+                <input type="text" class="form-control" id="inputPrijmeni" placeholder="Přijmení">
+              </div>
+            </div>
+            <div class="form-row justify-content-center">
+              <div class="form-group col-sm-6">
+                <label for="inputVek">Věk</label>
+                <input type="number" class="form-control" id="inputVek" placeholder="Věk">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="inputTelefon">Telefon</label>
+                <input type="text" class="form-control" id="inputTelefon" placeholder=" ">
+              </div>
+            </div> 
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary formButton">Uložit</button>
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
-    </div>
+      </div>
 
 
     <script src="js/PojistenciManager.js"></script>
